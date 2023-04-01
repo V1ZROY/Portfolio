@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectRight {
+    display: flex;
+    flex-direction: row-reverse;
+}
