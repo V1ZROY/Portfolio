@@ -9,37 +9,42 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="smallCard" visibility="hidden">
-            <img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg">
-            <h3>Vizor Onah</h3>
-        </div>
-        <nav id="navigation">
-            <a href="">Toolkit</a>
-            <a href="">Projects</a>
-            <a href="">Contact me</a>
-        </nav>
+    <header class="flexrow">
+        <section class="headerSection flexrow">
+            <div class="smallCard flexrow">
+                <img src="./images/thumbnailheader.png">
+                <h3>Vizor Onah</h3>
+            </div>
+            <nav id="navigation" class="flexrow">
+                <a href="#">Toolkit</a>
+                <a href="#">Projects</a>
+                <a href="#">CV</a>
+                <a href="#">Contact me</a>
+            </nav>
+        </section>
     </header>
     <main>
-        <div id="topSection">
-            <section id="card">
-                <img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg">
-                <h3>Vizor Onah</h3>
-                <p>Software developer</p>
-                <p>vizoronah@googlemail.com</p>
-            </section>
-            <section>
-                <h1>V's portfolio</h1>
-                <article>
-                    <p>A little about Vizor</p>
-                    <p class="introduction">Vee is a skilled web developer proficient in HTML, CSS and JavaScript, with a passion for creating stylish, immersive websites. With a background in pharmacy, Vee brings valuable transferrable skills such as prioritisation, time management and teamwork to every project. With an eye for detail and a commitment to delivering high-quality results, Vee is dedicated to crafting exceptional websites that meet the needs of his clients. Whether you need a simple landing page or a complex web application, Vee has the technical expertise and creative vision to bring your ideas to life.</p>
+        <div class="bgsplit">
+            <section id="heroSection" class="flexrow">
+                <article id="card">
+                    <img class="heroimg" src="./images/herophoto.png">
+                    <h3>Vizor Onah</h3>
+                    <p>Software developer</p>
+                    <p>vizoronah@googlemail.com</p>
+                </article>
+                <article id="heroText">
+                    <h1>About me</h1>
+                    <article>
+                        <p>A little about Vizor</p>
+                        <p class="introduction">Vee is a skilled web developer proficient in HTML, CSS and JavaScript, with a passion for creating stylish, immersive websites. With a background in pharmacy, Vee brings valuable transferrable skills such as prioritisation, time management and teamwork to every project. With an eye for detail and a commitment to delivering high-quality results, Vee is dedicated to crafting exceptional websites that meet the needs of his clients. Whether you need a simple landing page or a complex web application, Vee has the technical expertise and creative vision to bring your ideas to life.</p>
+                    </article>
                 </article>
             </section>
         </div>
         <section>
             <h2>Toolkit</h2>
             <p>These are some of the technologies Vizor has used in his projects</p>
-            <ul>
+            <ul class="flexrow">
                 <li>
                     <i class="fa-brands fa-github"></i>
                     <p>github</p>
@@ -66,7 +71,7 @@
             <h2>Projects</h2>
             <p>These are some of the projects Vizor has built</p>
             <article class="projectLeft">
-                <a href=""><img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"></a>
+                <a href="#"><img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"></a>
                 <div class="projectContainer">
                     <h3>Calculator app</h3>
                     <p>A calculator web app built using HTML, CSS, and JavaScript allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division in real-time. It features a sleek, user-friendly design and responsive layout, making it accessible across a variety of devices.</p>
@@ -77,7 +82,7 @@
                 </div>
             </article>
             <article class="projectRight">
-                <a href=""><img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"></a>
+                <a href="#"><img src="./images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"></a>
                 <div class="projectContainer">
                     <h3>Calculator app</h3>
                     <p>A calculator web app built using HTML, CSS, and JavaScript allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division in real-time. It features a sleek, user-friendly design and responsive layout, making it accessible across a variety of devices.</p>
@@ -104,11 +109,11 @@
             
                 <input type="submit" value="Submit">
               </form>
-            <address>
-                <a href="">email: vizoronah@googlemail.com</a>
-                <a href="">07771771777</a>
-                <a>LinkedIn</a>
-                <a>Github</a>
+            <address class="flexrow">
+                <a href="#">email: vizoronah@googlemail.com</a>
+                <a href="#">07771771777</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Github</a>
             </address>
         </section>
     </main>
