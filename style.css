@@ -1,19 +1,35 @@
+
+:root {
+    --main-bg-color: #D3EAE6;
+    --heading-text-color: #0B2404;
+    --subheading-text-color: #393A40;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #0B0C0D;
 }
 
 body * {
+    font-family: 'Open Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0B0C0D;
     display: flex;
     flex-direction: column;
 }
 
+h2 {
+    font-size: 64px;
+    color: var(--heading-text-color);
+}
+
+script {
+    display: none;
+}
+
 a {
     text-decoration: none;
-    text-transform: uppercase;
+    display: inline;
 }
 
 
@@ -22,7 +38,37 @@ section {
     width: clamp(1248px, 65vw, 70vw);
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    height: auto;
+    margin-top: 130px;
+}
+
+h3 {
+    font-size: 1.5em;   
+    font-weight: 550;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: -0.02em;
+    color: #0B2404;
+}
+
+p {
+    padding-top: 20px;
+    font-size: larger;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+
+header {
+    height: 80px;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .flexrow {
@@ -31,20 +77,6 @@ section {
     align-items: center;
 }
 
-img {
-    width: 400px;
-    height: 400px;
-}
-
-.heroimg {
-  object-fit: cover;
-  object-position: 50% -50%;
-}
-
-header {
-    height: 80px;
-    background-color: #D3EAE6;
-}
 
 .headerSection {
     height: 100%;
@@ -53,19 +85,55 @@ header {
     margin: 0px;
 }
 
-h1 {
-    font-size:  80px;
+.smallCard {
+    justify-content: flex-start;
+    width: 30%;
+    max-width: 250px;
 }
 
-.smallCard {
-    width: 30%;
-    max-width: 200px;
-}
 
 .smallCard > img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    margin-right: 10%;
+}
+
+#heroText > h1 {
+    position: absolute;
+    color: var(--heading-text-color);
+    width: 661px;
+    font-size:  80px;
+    bottom: 0px;
+    left: calc(17.5vw + 472px);
+}
+
+#heroText {
+    height: 400px;
+    left: 50vw;
+    width: 100%;
+}
+
+.bggreen {
+    width: 100%;
+    position: relative;
+    background-color: var(--main-bg-color);
+    margin: 0;
+}
+
+.bgwhite {
+    margin: 0;
+}
+
+.herogreen {
+    height: 450px;
+}
+
+
+.introduction {
+    width: 35%;
+    position: absolute;
+    left: calc(17.5vw + 472px);
 }
 
 nav {
@@ -74,8 +142,9 @@ nav {
 }
 
 nav > a {
+    text-transform: uppercase;
     width: 150px;
-    color: #393A40;
+    color: var(--subheading-text-color);
     letter-spacing: 0.08em;
     font-weight: 300;
     text-align: center;
@@ -83,36 +152,87 @@ nav > a {
 }
 
 
-
 #card {
+    height: fit-content;
+    position: absolute;
+    top: 130px;
+    left: 17.5vw;
     width: auto;
-    align-items: center;
-    background-color: beige;
-    padding: 15px;
+    align-items: center;    
+    border: 1px solid #C1C1C7;
 }
+
+
+.heroimg {
+    object-fit: cover;
+    object-position: 50% -50%;
+  }
 
 #heroSection {
+    height: clamp(770px, 90vh, 90vh);
+}
+
+.cardtext {
     justify-content: space-around;
-    height: 90vh;
-}
-
-.bgsplit {
-    background: rgb(252,255,255);
-    background: linear-gradient(0deg, rgba(252,255,255,1) 55%, #D3EAE6 55%);
-}
-
-#heroText {
-    width: 60%;
+    padding: 20px;
+    height: 232px;
+    background: #FFFFFF;
+    border-top: 1px solid #C1C1C7;
+    width: 100%;
 }
 
 
+.cardtext :not(h3) {
+    color: #9798A1;
+}
+
+.project {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 34px 50px;
+    border: 1px solid #C1C1C7;
+}
 
 .projectLeft {
-    display: flex;
     flex-direction: row;
 }
 
 .projectRight {
-    display: flex;
     flex-direction: row-reverse;
+}
+
+.project img {
+    height: 314px;
+    width: 314px;
+}
+
+.projectContainer {
+    height: clamp(300px, fit-content, fit-content);
+    width: clamp(476px, 723px, 723px);
+    justify-content: flex-start;
+}
+
+.projectContainer > * {
+    margin-bottom: 5%;
+}
+
+button {
+    width: 213px;
+    height: 39px;
+    justify-self: flex-start;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 1px;
+    color: #393A40;
+    background-color: var(--main-bg-color);
+}
+
+.projectButtons {
+    max-width: 476px;
+    justify-content: space-between;
 }
