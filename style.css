@@ -90,6 +90,7 @@ button {
     color: #393A40;
     background-color: var(--main-bg-color);
     cursor: pointer;
+    justify-self: center;
 }
 
 .flexrow {
