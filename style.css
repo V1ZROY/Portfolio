@@ -18,6 +18,10 @@ body * {
     flex-direction: column;
 }
 
+body{
+    min-height: 100vh;
+}
+
 h2 {
     font-size: 64px;
     color: var(--heading-text-color);
@@ -90,7 +94,7 @@ button {
     color: #393A40;
     background-color: var(--main-bg-color);
     cursor: pointer;
-    justify-self: center;
+    align-items: center;
 }
 
 .flexrow {
