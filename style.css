@@ -68,6 +68,9 @@ p {
 img {
     width: 400px;
     height: 400px;
+    transition-property: height, width;
+    transition-duration: 4s;
+    transition-delay: 2s;
 }
 
 
@@ -188,6 +191,16 @@ nav > a {
     width: auto;
     align-items: center;    
     border: 1px solid #C1C1C7;
+    transition-property: height, width, flex-direction, border;
+    transition-duration: 4s;
+}
+
+#card > img {
+    width: 400px;
+    height: 400px;
+    transition-property: height, width;
+    transition-duration: 4s;
+    transition-delay: 2s;
 }
 
 
@@ -207,6 +220,8 @@ nav > a {
     background: #FFFFFF;
     border-top: 1px solid #C1C1C7;
     width: 100%;
+    transition-property: display;
+    transition-duration: 4s;
 }
 
 
@@ -270,7 +285,7 @@ nav > a {
 }
 
 
-.cardtext {
+#card.shrunk > .cardtext {
     display: none;
 }
 
@@ -281,9 +296,10 @@ nav > a {
     border: none;
 }
 
-#card img.shrunk {
-    transform: scale(0.125);
+#card.shrunk > img.shrunk {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     margin-right: 3%;
-}
+} 
 

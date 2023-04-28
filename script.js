@@ -1,17 +1,15 @@
-const toShirnk = document.querySelectorAll("#card,.cardtext,#card img");
+const toShrink = document.querySelector("#card");
 //new variable to select element I want observed 
 //querySelectorAll creates an array of all elements with that css selector
-// const options = {rootMargin: "-100px"}
+const options = {root: document.querySelector("header")}
 //this variable is optgit lohions for the Intersection observer
-const observer = new IntersectionObserver(
-    entries => {//function passed into intersection observer
-    entries.forEach(entry => {
-        entry.target.classList.add("shrunk", entry.isIntersecting)
-    })
-}, 
-// options//calling options which were defined earlier
-)
 
-toShirnk.forEach(elem => {
-    observer.observe(elem)
-});
+function shrink(entry) {
+    entry.classList.add("shrunk")}
+
+const observer = new IntersectionObserver(shrink, options);
+
+observer.observe(toShrink)
+
+// console.log(options)
+// console.log(toShrink)
