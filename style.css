@@ -268,3 +268,22 @@ nav > a {
     padding: 10px;
     margin-right: 1%;
 }
+
+
+.cardtext {
+    display: none;
+}
+
+#card.shrunk{
+    width: clamp(900px, 65vw, 70vw);
+    height: 80px;
+    flex-direction: row;
+    border: none;
+}
+
+#card img.shrunk {
+    transform: scale(0.125);
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
