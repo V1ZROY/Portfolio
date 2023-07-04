@@ -40,14 +40,17 @@ li {
     display: inline;
 }
 
+main > div {
+    margin-bottom: 130px;
+}
 
-section {
+section, address {
     align-self: center;
     width: clamp(900px, 65vw, 70vw);
     display: flex;
     flex-direction: column;
     height: auto;
-    padding-top: 130px;
+    margin-bottom: 130px;
 }
 
 h3 {
@@ -126,7 +129,7 @@ button {
     margin-right: 10%;
 }
 
-#heroText > h1 {
+.heroText > h1 {
     position: absolute;
     color: var(--heading-text-color);
     width: 661px;
@@ -135,7 +138,7 @@ button {
     left: calc(17.5vw + 472px);
 }
 
-#heroText {
+.heroText {
     height: 400px;
     left: 50vw;
     width: 100%;
@@ -180,7 +183,7 @@ nav > a {
 }
 
 
-#card {
+.card {
     height: fit-content;
     position: absolute;
     top: 130px;
@@ -196,7 +199,7 @@ nav > a {
     object-position: 50% -50%;
   }
 
-#heroSection {
+.heroSection {
     height: clamp(770px, 90vh, 90vh);
 }
 
@@ -267,4 +270,34 @@ nav > a {
     border-radius: 10px;
     padding: 10px;
     margin-right: 1%;
+}
+
+form {
+    height: clamp(300px, fit-content, fit-content);
+    width: clamp(476px, 723px, 723px);
+    justify-content: flex-start;
+}
+
+form label {
+    text-transform: uppercase;
+    color: #393A40;
+    padding-top: 20px;
+}
+
+input, textarea {
+    height: 39px, fit-content;
+    border-radius: 1px;
+    color: #393A40;
+    box-shadow: none;
+    border: solid 1px #C1C1C7;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.form_container{
+    transform: translateY(-60px);
 }
